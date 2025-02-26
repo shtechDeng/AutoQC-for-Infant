@@ -1,0 +1,39 @@
+2023-11-03 10:21:20,171 - logger_util.py [line:27] - INFO: comment1:~~~~~~~hardwork config~~~~~~~
+2023-11-03 10:21:20,172 - logger_util.py [line:27] - INFO: device_type:cuda
+2023-11-03 10:21:20,172 - logger_util.py [line:27] - INFO: cuda_idx:0
+2023-11-03 10:21:20,172 - logger_util.py [line:27] - INFO: comment2:~~~~~~database config~~~~~~~~
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: database_root:./data_label
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: train_database:./data/train2.txt
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: test_database:./data/test2.txt
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: verify_database:./data_label/label_verify.txt
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: data_ext:.tif
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: transform_mode:one
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: one_input_range:[None, None]
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: one_label_range:[None, None]
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: norm_input_mean_std:[]
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: norm_label_mean_std:[]
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: data_size:[1, 16, 512, 512]
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: label_size:[1, 1024, 1024]
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: otherLabel_size:[1, 128, 128]
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: epochs:500
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: train_loader_batch:8
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: test_loader_batch:1
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: verify_loader_batch:1
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: comment3:~~~~~~~network config~~~~~~~
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: network_aim:classify
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: general_model:{'model_name': 'ViT', 'last_model_weight': '/home_data/home/denghw2023/deep/weight/classify_DataParallel_0.397209_55_0.001_20231031182806.pthxx', 'verify_model_weight': ' ', 'input_size': [1, 208, 300, 320], 'input_batch_size': 8, 'learning_rate': 0.0001, 'optimizer': 'adamw', 'momentum': 0.9, 'weight_decay': 1e-05, 'scheduler_mode': 'multi', 'gamma': 0.1, 'last_epoch': -1, 'step_size': 20, 'milestones': [], 'T_max': 20, 'eta_min': 1e-08, 'mode': 'min'}
+2023-11-03 10:21:20,173 - logger_util.py [line:27] - INFO: comment4:~~~~~~~loss config~~~~~~~
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: train_loss_function:ce
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: test_loss_function:ce
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: verify_loss_function:mse
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: comment5:~~~~~~~other relative config~~~~~~~
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: epoch_print:1
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: batch_print:50
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: log_filename_train_test:log_train_test_01.txt
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: log_filename_verify:log_verify_01.txt
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: visualization_train_test:./visual_train_test_01
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: visualization_verify:./visual_verify_01
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: model_save_dir:weight
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: save_train_image:True
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: save_test_image:True
+2023-11-03 10:21:20,174 - logger_util.py [line:27] - INFO: train_result_save_dir:train_result

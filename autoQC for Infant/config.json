@@ -1,0 +1,93 @@
+{
+  "comment1": "~~~~~~~hardwork config~~~~~~~",
+  "device_type": "cuda",
+  "cuda_idx": "0",
+  "comment2": "~~~~~~database config~~~~~~~~",
+  "database_root": "./data_label",
+  "train_database": "./data/train2.txt",
+  "test_database": "./data/test2.txt",
+  "verify_database": "./data_label/label_verify.txt",
+  "data_ext": ".tif",
+  "transform_mode": "one",
+  "one_input_range": [
+    null,
+    null
+  ],
+  "one_label_range": [
+    null,
+    null
+  ],
+  "norm_input_mean_std": [
+  ],
+  "norm_label_mean_std": [
+  ],
+  "data_size": [
+    1,
+    16,
+    512,
+    512
+  ],
+  "label_size": [
+    1,
+    1024,
+    1024
+  ],
+  "otherLabel_size": [
+    1,
+    128,
+    128
+  ],
+  "epochs": 500,
+  "train_loader_batch": 8,
+  "test_loader_batch": 1,
+  "verify_loader_batch": 1,
+  "comment3": "~~~~~~~network config~~~~~~~",
+  "network_aim": "classify",
+  "general_model": {
+    "model_name": "ViT",
+    "last_model_weight": "/home_data/home/denghw2023/deep/weight/classify_DataParallel_0.397209_55_0.001_20231031182806.pthxx",
+    "verify_model_weight": " ",
+    "input_size": [
+      1,
+      208,
+      300,
+      320
+    ],
+
+    "input_batch_size": 8,
+    "learning_rate": 1e-4,
+    "optimizer": "adamw",
+    "momentum": 0.9,
+    "weight_decay": 1e-5,
+    "scheduler_mode": "multi",
+    "gamma": 0.1,
+    "last_epoch": -1,
+    "step_size": 20,
+    "milestones": [
+    ],
+    "T_max": 20,
+    "eta_min": 1e-8,
+    "mode": "min"
+  },
+
+  "comment4": "~~~~~~~loss config~~~~~~~",
+  "train_loss_function": "ce",
+  "test_loss_function": "ce",
+  "verify_loss_function": "mse",
+
+
+  "comment5": "~~~~~~~other relative config~~~~~~~",
+  "epoch_print": 1,
+  "batch_print": 50,
+  "log_filename_train_test": "log_train_test_01.txt",
+  "log_filename_verify": "log_verify_01.txt",
+  "visualization_train_test": "./visual_train_test_01",
+  "visualization_verify": "./visual_verify_01",
+  "model_save_dir": "weight",
+  "save_train_image": true,
+  "save_test_image": true,
+  "train_result_save_dir": "train_result",
+  "test_result_save_dir": "test_result",
+  "verify_result_save_dir": "verify_result",
+  "verify_save_filename": "verify_result.txt"
+}
